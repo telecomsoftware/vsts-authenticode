@@ -100,6 +100,15 @@
             }
         },
         {
+            "name": "certificateSubjectName",
+            "type": "string",
+            "label": "Certificate Subject Name",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "Subject Name of the certificate to use from the store.",
+            "visibleRule": "certificateLocation = computerStore || certificateLocation = userStore"
+        },
+        {
             "name": "pfxFile",
             "type": "filePath",
             "label": "Pfx File",
